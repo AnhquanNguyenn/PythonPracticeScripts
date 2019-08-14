@@ -47,7 +47,7 @@ def distance_faster(s1, s2, lengths1, lengths2):
 str1 = 'biting'
 str2 = 'sitting'
 str3 = str1
-print("Using Recursion", distance(str1, str2, len(str1), len(str2)))
-print("Using Dynamic Programming", distance(str1, str2, len(str1), len(str2)))
-print("Using Recursion", distance(str1, str3, len(str1), len(str3)))
-print("Using Dynamic Programming", distance(str1, str3, len(str1), len(str3)))
+print("Using Recursion:", distance(str1, str2, len(str1), len(str2)))
+print("Using Dynamic Programming:", distance(str1, str2, len(str1), len(str2)))
+print("Using Recursion:", distance(str1, str3, len(str1), len(str3)))
+print("Using Dynamic Programming:", distance(str1, str3, len(str1), len(str3)))
