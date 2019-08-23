@@ -1,0 +1,53 @@
+def getCount(node):
+	current = node
+	count = 0
+	while current != None:
+		count += 1
+		current = current.next
+
+	return count
+
+
+def getNode(a, b):
+	c1 = getCount(a)
+	c2 = getCount(b)
+
+	if c1 > c2:
+		d = c1 - c2
+
+def intersection(d, a, b):
+	current1 = a
+	current2 = b
+
+	for i in range(d):
+		if (current1 == null):
+			return -1
+
+		curent1 = curent1.next
+
+	while (current1 != None and current2 != None):
+		if current1.data == current2.data:
+			return current1.data
+
+		current1 = current1.next
+		current2 = current2.next
+
+	return -1
+		
+  	
+
+class Node(object):
+	def __init__(self, val):
+		self.val = val
+		self.next = None
+
+
+a = Node(1)
+a.next = Node(2)
+a.next.next = Node(3)
+a.next.next.next = Node(4)
+
+b = Node(6)
+b.next = a.next.next
+
+print(getNode(a, b)) 
