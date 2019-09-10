@@ -44,7 +44,7 @@ for x in range(1, 8):
     else:
         print(x, "is not in tree")
         
-print(tempList)
+print("Nodes of height", desiredHeight, tempList)
     
     
     
