@@ -19,7 +19,7 @@ def returnList(sentence, words):
             sentenceOutput += returnList(sentence[i + 1:], wordSet)
             break
     
-    return sentenceOutput
+    return sentenceOutput 
 
 
 sentence = "thequickbrownfox"
