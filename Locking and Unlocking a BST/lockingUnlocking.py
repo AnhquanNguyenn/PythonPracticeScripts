@@ -82,13 +82,16 @@ print(c.locked_descendants_count)
 '''
 
 def is_parent_locked(node):
+    # No parent, there is no parent that is locked
     if not node.parent:
         return False
+    # if the parent is locked return true 
     elif node.parent.locked:
         return True
+    # if not at the parent, recursively call until we reach the parent
     return is_parent_locked(node.parent)
 
-
+# Method updates all the parent nodes with appropriate locked descendants counts
 def update_parent(node, enable_locks):
     if enable_locks:
         increment = 1
