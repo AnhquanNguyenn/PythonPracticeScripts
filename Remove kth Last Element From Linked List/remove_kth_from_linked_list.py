@@ -3,15 +3,6 @@ class Node:
         self.value = value
         self.next = None
 
-    # printing our linked list in a list form
-    def __str__(self):
-        currentNode = self
-        result = []
-        while currentNode:
-            result.append(currentNode.value)
-            currentNode = currentNode.next
-        return str(result)
-
 
 def remove_kth_from_linked_list(head, k):
     # if there is an empty list
