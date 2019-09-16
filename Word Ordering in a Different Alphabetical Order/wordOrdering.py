@@ -1,5 +1,8 @@
 def wordOrdering(words, order):
     # Creating a dictionary 
+    # {'z': 0, 'y': 1, 'x': 2, 'w': 3, 'v': 4, 'u': 5, 't': 6, 's': 7, 'r': 8, 'q': 9, 'p': 10, 
+    # 'o': 11, 'n': 12, 'm': 13, 'l': 14, 'k': 15, 'j': 16, 'i': 17, 'h': 18, 'g': 19, 'f': 20, 
+    # 'e': 21, 'd': 22, 'c': 23, 'b': 24, 'a': 25}
     orderIndex = {c: i for i, c in enumerate(order)}
     
     for i in range(len(words) - 1):
