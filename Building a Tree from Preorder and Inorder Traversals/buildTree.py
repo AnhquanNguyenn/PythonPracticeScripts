@@ -4,6 +4,7 @@ class Node:
         self.left = None
         self.right = None
 
+
 def buildTree(inOrder, preOrder, inStart, inEnd):
     if inStart > inEnd:
         return None
