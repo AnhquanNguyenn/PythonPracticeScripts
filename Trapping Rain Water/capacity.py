@@ -36,6 +36,8 @@ def capacity(puddles):
 puddles = [0, 1, 0, 2, 1, 0, 1, 3, 2, 1, 2, 1]
 puddles2 = [2, 0, 2]
 puddles3 = [3, 0, 0, 2, 0, 4]
+puddles4 = [3, 0, 1, 3, 0, 5]
 print(capacity(puddles))
 print(capacity(puddles2))
 print(capacity(puddles3))
+print(capacity(puddles4))
